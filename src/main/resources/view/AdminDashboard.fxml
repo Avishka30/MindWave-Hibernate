@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashBoardPage" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.AdminDashboardController">
+   <children>
+      <Pane fx:id="cardpane" prefHeight="149.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;">
+         <children>
+            <Pane fx:id="userRoleManPane" layoutX="10.0" layoutY="9.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <Label fx:id="theraphistLbl" layoutX="12.0" layoutY="36.0" text="Theraphist">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tManagementLbl" layoutX="12.0" layoutY="51.0" text="Management">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="tharaphistImg" fitHeight="28.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/theraphist.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="theraphistManBtn" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#theraphistPageAction" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #1B5A4F; -fx-text-fill: white; -fx-background-radius: 10;" text="Go to Page">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane fx:id="userRoleManPane1" layoutX="176.0" layoutY="9.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+               <children>
+                  <Label fx:id="theraphistLbl1" layoutX="12.0" layoutY="36.0" text="Therapy Program">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tManagementLbl1" layoutX="12.0" layoutY="51.0" text="Management">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="therapymanImg" fitHeight="28.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/therapy-man.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="programManPage" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#therapyProgramManAction" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #1B5A4F; -fx-text-fill: white; -fx-background-radius: 10;" text="Go to Page">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="userRoleManPane2" layoutX="342.0" layoutY="10.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+               <children>
+                  <Label fx:id="theraphistLbl2" layoutX="12.0" layoutY="36.0" text="Patient">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tManagementLbl2" layoutX="12.0" layoutY="51.0" text="Management">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="patientImg" fitHeight="28.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/patient.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="patientBtn" layoutX="9.0" layoutY="90.0" mnemonicParsing="false" onAction="#patientOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #1B5A4F; -fx-text-fill: white; -fx-background-radius: 10;" text="Go to Page">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="userRoleManPane3" layoutX="505.0" layoutY="11.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+               <children>
+                  <Label fx:id="theraphistLbl3" layoutX="12.0" layoutY="36.0" text="Therapy Session">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tManagementLbl3" layoutX="12.0" layoutY="51.0" text="Scheduling">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="sessionImg" fitHeight="28.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/scheduling.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="sessionBtn" layoutX="8.0" layoutY="90.0" mnemonicParsing="false" onAction="#sessionPageOnAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #1B5A4F; -fx-text-fill: white; -fx-background-radius: 10;" text="Go to Page">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="userRoleManPane4" layoutX="669.0" layoutY="11.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+               <children>
+                  <Label fx:id="theraphistLbl4" layoutX="12.0" layoutY="36.0" text="Payment &amp;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tManagementLbl4" layoutX="12.0" layoutY="51.0" text="Invoice">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="paymentImg" fitHeight="28.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/payment.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="paymentBtn" layoutX="8.0" layoutY="90.0" mnemonicParsing="false" onAction="#patmentPageOnAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #1B5A4F; -fx-text-fill: white; -fx-background-radius: 10;" text="Go to Page">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="userRoleManPane5" layoutX="837.0" layoutY="12.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+               <children>
+                  <Label fx:id="theraphistLbl5" layoutX="12.0" layoutY="36.0" text="Reporting &amp;">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tManagementLbl5" layoutX="12.0" layoutY="51.0" text="Analytics">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="reportImg" fitHeight="28.0" fitWidth="28.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/report.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="reportBtn" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#reportPageOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #1B5A4F; -fx-text-fill: white; -fx-background-radius: 10;" text="Go to Page">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="loadPane" layoutX="6.0" layoutY="152.0" prefHeight="442.0" prefWidth="988.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
