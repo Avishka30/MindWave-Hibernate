@@ -14,6 +14,7 @@ module lk.ijse.mindwave {
     requires jbcrypt;
 
     opens lk.ijse.mindwave.config to jakarta.persistence;
+    opens lk.ijse.mindwave.view.tdm to javafx.base;
     opens lk.ijse.mindwave.entity to org.hibernate.orm.core;
     opens lk.ijse.mindwave.controller to javafx.fxml;
 //    opens lk.ijse.mindwave.dto to javafx.base;

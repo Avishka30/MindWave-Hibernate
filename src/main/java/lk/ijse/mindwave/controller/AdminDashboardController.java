@@ -2,11 +2,14 @@ package lk.ijse.mindwave.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+
+import java.io.IOException;
 
 public class AdminDashboardController {
 
@@ -131,12 +134,21 @@ public class AdminDashboardController {
 
     @FXML
     void theraphistPageAction(ActionEvent event) {
-
+        loadUI("/view/TherapistManagementForm.fxml");
     }
 
     @FXML
     void therapyProgramManAction(ActionEvent event) {
+        loadUI("/view/TherapyProgramManagementForm.fxml");
 
+    }
+    private void loadUI(String ui) {
+        try {
+            loadPane.getChildren().clear();
+            loadPane.getChildren().add(FXMLLoader.load(getClass().getResource(ui)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

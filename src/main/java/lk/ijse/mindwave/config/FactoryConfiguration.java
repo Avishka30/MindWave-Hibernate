@@ -1,5 +1,7 @@
 package lk.ijse.mindwave.config;
 
+import lk.ijse.mindwave.entity.Therapist;
+import lk.ijse.mindwave.entity.TherapyProgram;
 import lk.ijse.mindwave.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,6 +24,8 @@ public class FactoryConfiguration {
         configuration.setProperties(properties);
 
         configuration.addAnnotatedClass(User.class);
+        configuration.addAnnotatedClass(Therapist.class);
+        configuration.addAnnotatedClass(TherapyProgram.class);
 
         sessionFactory = configuration.buildSessionFactory();
     }

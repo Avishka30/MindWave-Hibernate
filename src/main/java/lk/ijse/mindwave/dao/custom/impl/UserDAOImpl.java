@@ -6,6 +6,8 @@ import lk.ijse.mindwave.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.util.List;
+
 public class UserDAOImpl implements UserDAO {
     private final FactoryConfiguration factoryConfiguration = new FactoryConfiguration();
     @Override
@@ -19,6 +21,16 @@ public class UserDAOImpl implements UserDAO {
             if (transaction != null) transaction.rollback();
             e.printStackTrace();
         }
+        return false;
+    }
+
+    @Override
+    public boolean update(User entity) {
+        return false;
+    }
+
+    @Override
+    public boolean deleteByPK(String id) throws Exception {
         return false;
     }
 
@@ -36,6 +48,11 @@ public class UserDAOImpl implements UserDAO {
                 return "U00-001"; // First user ID
             }
         }
+    }
+
+    @Override
+    public List<User> getAll() {
+        return List.of();
     }
 
     @Override

@@ -11,7 +11,7 @@
 
 <AnchorPane fx:id="adminDashBoardPage" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.AdminDashboardController">
    <children>
-      <Pane fx:id="cardpane" prefHeight="149.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;">
+      <Pane fx:id="cardpane" prefHeight="146.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;">
          <children>
             <Pane fx:id="userRoleManPane" layoutX="10.0" layoutY="9.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 20;">
                <children>
