@@ -56,6 +56,11 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
+    public User findById(String id) {
+        return null;
+    }
+
+    @Override
     public User getUserByUsername(String username) {
         try (Session session = factoryConfiguration.getSession()) {
             return session.createQuery("FROM User WHERE userName = :username", User.class)

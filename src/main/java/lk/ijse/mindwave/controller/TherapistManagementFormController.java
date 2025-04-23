@@ -30,7 +30,9 @@ public class TherapistManagementFormController implements Initializable {
         clmTherapisstAvailability.setCellValueFactory(new PropertyValueFactory<>("availability"));
 
         // Load data into table
+
         loadTherapists();
+        generateNewId();
     }
 
     @FXML
@@ -120,6 +122,10 @@ public class TherapistManagementFormController implements Initializable {
 
         //table ek reload wenn hdnn
     }
+    private void generateNewId() {
+        txtTherapistId.setText(therapistBO.getNaxtTherapistID());
+    }
+
 
     @FXML
     void btnDelete_OnAction(ActionEvent event) {
@@ -148,6 +154,7 @@ public class TherapistManagementFormController implements Initializable {
             }
             loadTherapists();
             clearFields();
+            generateNewId();
         }
 
     }
@@ -181,6 +188,7 @@ public class TherapistManagementFormController implements Initializable {
 
         loadTherapists();
         clearFields();
+        generateNewId();
     }
 
     @FXML
@@ -210,6 +218,7 @@ public class TherapistManagementFormController implements Initializable {
 
         loadTherapists();
         clearFields();
+        generateNewId();
     }
 
     @FXML

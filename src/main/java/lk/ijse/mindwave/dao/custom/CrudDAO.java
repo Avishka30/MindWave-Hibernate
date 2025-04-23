@@ -8,4 +8,6 @@ public interface CrudDAO <T> {
     boolean deleteByPK(String id) throws Exception;
     String getNextId();
     List<T> getAll();
+    T findById(String id) ;
+
 }
