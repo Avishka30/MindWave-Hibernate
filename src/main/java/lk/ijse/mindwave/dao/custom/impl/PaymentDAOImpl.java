@@ -61,7 +61,7 @@ public class PaymentDAOImpl implements PaymentDAO {
             int numericPart = Integer.parseInt(lastId.split("-")[1]) + 1;
             return String.format("PA00-%03d", numericPart);
         } else {
-            return "PA00-001"; // First user ID
+            return "PA00-001";
         }
     }
 
