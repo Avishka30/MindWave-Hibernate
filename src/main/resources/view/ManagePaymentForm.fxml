@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="paymentPane" prefHeight="442.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.ManagePaymentFormController">
    <children>
       <TextField fx:id="txtAmount" layoutX="150.0" layoutY="139.0" prefHeight="25.0" prefWidth="179.0" />
@@ -52,17 +51,7 @@
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btnDelete" layoutX="868.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnUpdate" layoutX="562.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnUpdate_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #1b5a4f;" text="Update" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSave" layoutX="460.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #1b5a4f;" text="Save" textFill="WHITE">
+      <Button fx:id="btnSave" layoutX="711.0" layoutY="191.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: #1b5a4f;" text="Complete Payment" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
@@ -91,15 +80,5 @@
          </font>
       </Label>
       <TextField fx:id="txtSessionId" layoutX="711.0" layoutY="142.0" prefHeight="25.0" prefWidth="215.0" />
-      <Button fx:id="btnClear" layoutX="664.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnClear_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #1b5a4f;" text="Clear" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnGetInvoice" layoutX="766.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnGetInvoice_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #1b5a4f;" text="Invoice" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

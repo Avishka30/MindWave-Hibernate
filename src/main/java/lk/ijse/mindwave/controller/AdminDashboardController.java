@@ -4,14 +4,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AdminDashboardController implements Initializable {
@@ -117,6 +121,9 @@ public class AdminDashboardController implements Initializable {
     private Pane userRoleManPane4;
 
     @FXML
+    private ImageView logoutImg;
+
+    @FXML
     private Pane userRoleManPane5;
 
     @FXML
@@ -124,6 +131,8 @@ public class AdminDashboardController implements Initializable {
         loadUI("/view/PatientManagementForm.fxml");
 
     }
+
+
 
     @FXML
     void patmentPageOnAction(ActionEvent event) {
@@ -160,5 +169,24 @@ public class AdminDashboardController implements Initializable {
             e.printStackTrace();
         }
     }
+    private void loadToUI(String ui) {
+        try {
+            adminDashBoardPage.getChildren().clear();
+            adminDashBoardPage.getChildren().add(FXMLLoader.load(getClass().getResource(ui)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    public void logoutOnAction(MouseEvent mouseEvent) {
+        Alert confirm = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure to log out", ButtonType.YES, ButtonType.NO);
+        Optional<ButtonType> result = confirm.showAndWait();
+
+        if (result.isPresent() && result.get() == ButtonType.YES) {
+            loadToUI("/view/LoginPage.fxml");
+        }else {
+            //
+        }
+
+    }
 }

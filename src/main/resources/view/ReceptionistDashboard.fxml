@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.ReceptionistDashboardController">
+<AnchorPane fx:id="receptioanistPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.ReceptionistDashboardController">
    <children>
       <Pane fx:id="cardpane" layoutY="-2.0" prefHeight="146.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;">
          <children>
@@ -109,6 +108,11 @@
                   </Button>
                </children>
             </Pane>
+            <ImageView fx:id="logoutImg2" fitHeight="44.0" fitWidth="42.0" layoutX="924.0" layoutY="51.0" onMouseClicked="#LogOutOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logout.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <AnchorPane fx:id="loadPane" layoutX="6.0" layoutY="150.0" prefHeight="442.0" prefWidth="988.0" style="-fx-background-color: white; -fx-background-radius: 20;" />

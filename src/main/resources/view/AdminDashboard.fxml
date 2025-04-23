@@ -13,7 +13,7 @@
    <children>
       <Pane fx:id="cardpane" prefHeight="146.0" prefWidth="1000.0" style="-fx-background-color: #1B5A4F;">
          <children>
-            <Pane fx:id="userRoleManPane" layoutX="10.0" layoutY="9.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+            <Pane fx:id="userRoleManPane" layoutX="8.0" layoutY="8.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 20;">
                <children>
                   <Label fx:id="theraphistLbl" layoutX="12.0" layoutY="36.0" text="Theraphist">
                      <font>
@@ -40,7 +40,7 @@
                   <Insets />
                </opaqueInsets>
             </Pane>
-            <Pane fx:id="userRoleManPane1" layoutX="176.0" layoutY="9.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+            <Pane fx:id="userRoleManPane1" layoutX="164.0" layoutY="8.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
                <children>
                   <Label fx:id="theraphistLbl1" layoutX="12.0" layoutY="36.0" text="Therapy Program">
                      <font>
@@ -64,7 +64,7 @@
                   </Button>
                </children>
             </Pane>
-            <Pane fx:id="userRoleManPane2" layoutX="342.0" layoutY="10.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+            <Pane fx:id="userRoleManPane2" layoutX="321.0" layoutY="10.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
                <children>
                   <Label fx:id="theraphistLbl2" layoutX="12.0" layoutY="36.0" text="Patient">
                      <font>
@@ -88,7 +88,7 @@
                   </Button>
                </children>
             </Pane>
-            <Pane fx:id="userRoleManPane3" layoutX="505.0" layoutY="11.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+            <Pane fx:id="userRoleManPane3" layoutX="479.0" layoutY="10.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
                <children>
                   <Label fx:id="theraphistLbl3" layoutX="12.0" layoutY="36.0" text="Therapy Session">
                      <font>
@@ -112,7 +112,7 @@
                   </Button>
                </children>
             </Pane>
-            <Pane fx:id="userRoleManPane4" layoutX="669.0" layoutY="11.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+            <Pane fx:id="userRoleManPane4" layoutX="637.0" layoutY="10.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
                <children>
                   <Label fx:id="theraphistLbl4" layoutX="12.0" layoutY="36.0" text="Payment &amp;">
                      <font>
@@ -136,7 +136,7 @@
                   </Button>
                </children>
             </Pane>
-            <Pane fx:id="userRoleManPane5" layoutX="837.0" layoutY="12.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+            <Pane fx:id="userRoleManPane5" layoutX="795.0" layoutY="10.0" prefHeight="129.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: white;">
                <children>
                   <Label fx:id="theraphistLbl5" layoutX="12.0" layoutY="36.0" text="Reporting &amp;">
                      <font>
@@ -160,6 +160,11 @@
                   </Button>
                </children>
             </Pane>
+            <ImageView fx:id="logoutImg" fitHeight="44.0" fitWidth="40.0" layoutX="951.0" layoutY="52.0" onMouseClicked="#logoutOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logout.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <AnchorPane fx:id="loadPane" layoutX="6.0" layoutY="152.0" prefHeight="442.0" prefWidth="988.0" style="-fx-background-color: white; -fx-background-radius: 20;" />

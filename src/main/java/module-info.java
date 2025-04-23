@@ -12,6 +12,7 @@ module lk.ijse.mindwave {
     requires java.naming;
     requires jakarta.persistence;
     requires jbcrypt;
+    requires java.desktop;
 
     opens lk.ijse.mindwave.config to jakarta.persistence;
     opens lk.ijse.mindwave.view.tdm to javafx.base;

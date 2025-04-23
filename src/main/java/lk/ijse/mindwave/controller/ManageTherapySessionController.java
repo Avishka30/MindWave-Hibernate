@@ -11,6 +11,7 @@ import lk.ijse.mindwave.bo.custom.TherapySessionBO;
 import lk.ijse.mindwave.bo.custom.impl.TherapySessionBOImpl;
 import lk.ijse.mindwave.dto.TherapySessionDTO;
 
+import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.time.LocalTime;
 import java.util.Optional;
@@ -47,6 +48,10 @@ public class ManageTherapySessionController {
 
     @FXML
     private Label idLbl;
+
+
+    @FXML
+    private ImageView logoutImg;
 
     @FXML
     private Label idLbl1;
@@ -310,6 +315,11 @@ public class ManageTherapySessionController {
         txtprogramId.clear();
         txtSessionTime.clear();
         dpSessionDate.setValue(null);
+    }
+    @FXML
+    void logoutOnAction(MouseEvent event) {
+
+
     }
 
 }
