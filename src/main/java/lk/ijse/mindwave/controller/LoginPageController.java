@@ -73,7 +73,7 @@ public class LoginPageController {
         if (role == Role.ADMIN) { // enum ekn ena role ek blnv . ek constant value ekk
             loadUI("/view/AdminDashboard.fxml");
         } else if (role == Role.RECEPTIONIST) {
-            loadUI("/view/SignUpPage.fxml");
+            loadUI("/view/ReceptionistDashboard.fxml");
         } else {
             new Alert(Alert.AlertType.ERROR,"Unauthorized access!").show();
         }
