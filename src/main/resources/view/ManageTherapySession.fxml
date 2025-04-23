@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sessionPane" prefHeight="442.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.ManageTherapySessionController">
+   <children>
+      <TextField fx:id="txtSessionId" layoutX="125.0" layoutY="84.0" prefHeight="25.0" prefWidth="300.0" />
+      <Pane fx:id="theraphistHead" layoutX="-1.0" prefHeight="54.0" prefWidth="993.0" style="-fx-background-color: #E09B41;">
+         <children>
+            <ImageView fx:id="theraphistImg" fitHeight="41.0" fitWidth="44.0" layoutX="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/scheduling.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="titleLbl" layoutX="92.0" layoutY="6.0" text="Manage Therapy Session" textFill="#1b5a4f">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="idLbl" layoutX="17.0" layoutY="88.0" text="Session-ID">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLbl" layoutX="15.0" layoutY="121.0" text="Session Date">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpSessionDate" layoutX="126.0" layoutY="119.0" prefHeight="25.0" prefWidth="299.0" />
+      <Label fx:id="idLbl1" layoutX="17.0" layoutY="163.0" text="Session Time">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSessionTime" layoutX="125.0" layoutY="162.0" prefHeight="25.0" prefWidth="300.0" />
+      <AnchorPane fx:id="mainPane" layoutX="455.0" layoutY="82.0" prefHeight="340.0" prefWidth="513.0" style="-fx-border-color: #E09B41; -fx-border-width: 2;" />
+      <Button fx:id="btnAddPatient" layoutX="12.0" layoutY="206.0" mnemonicParsing="false" onAction="#btnAddPatient_OnAction" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #1b5a4f;" text="Add Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddTherapyProgram" layoutX="11.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnAddTherapyProgram_OnAction" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #1b5a4f;" text="Add Program" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddTherapist" layoutX="11.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnAddTherapist_OnAction" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #1b5a4f;" text="Add Therapist" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtPatientId" layoutX="147.0" layoutY="209.0" prefHeight="25.0" prefWidth="265.0" />
+      <TextField fx:id="txtprogramId" layoutX="146.0" layoutY="244.0" prefHeight="25.0" prefWidth="265.0" />
+      <TextField fx:id="txtTherapistId" layoutX="144.0" layoutY="276.0" prefHeight="25.0" prefWidth="265.0" />
+      <Button fx:id="btnComplete" layoutX="299.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnCompleteOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #E09B41;" text="Complete">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSeeAll" layoutX="165.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnSeeAllOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #E09B41;" text="See All">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

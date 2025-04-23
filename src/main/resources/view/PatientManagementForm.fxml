@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="patientPane" prefHeight="442.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.ManagePatientFormController">
+   <children>
+      <TextField fx:id="txtPatientId" layoutX="156.0" layoutY="81.0" prefHeight="25.0" prefWidth="300.0" />
+      <TextField fx:id="txtPatientName" layoutX="158.0" layoutY="127.0" prefHeight="25.0" prefWidth="300.0" />
+      <Pane fx:id="theraphistHead" layoutX="-1.0" prefHeight="53.0" prefWidth="991.0" style="-fx-background-color: #E09B41;">
+         <children>
+            <ImageView fx:id="theraphistImg" fitHeight="41.0" fitWidth="44.0" layoutX="22.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/patient.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="titleLbl" layoutX="80.0" layoutY="7.0" text="Manage Patient" textFill="#1b5a4f">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="idLbl" layoutX="34.0" layoutY="85.0" text="Patient-ID">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLbl" layoutX="35.0" layoutY="130.0" text="Patient-name">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="specialityLbl" layoutX="34.0" layoutY="174.0" text="Contact">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="158.0" layoutY="171.0" prefHeight="25.0" prefWidth="141.0" />
+      <Label fx:id="availabilityLbl" layoutX="483.0" layoutY="84.0" text="Medical History">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDelete" layoutX="871.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="768.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnUpdate_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #1b5a4f;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="666.0" layoutY="181.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #1b5a4f;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblPatient" layoutX="21.0" layoutY="220.0" onMouseClicked="#tblPatientOnClick" prefHeight="206.0" prefWidth="947.0">
+         <columns>
+            <TableColumn fx:id="clmPatientId" prefWidth="139.6666717529297" text="Patient-ID" />
+            <TableColumn fx:id="clmPatientName" prefWidth="160.0" text="Patient Name" />
+            <TableColumn fx:id="clmContact" prefWidth="169.66668701171875" text="Contact" />
+            <TableColumn fx:id="clmGender" prefWidth="143.66668701171875" text="Gender" />
+            <TableColumn fx:id="clmMedicalHistory" prefWidth="332.0" text="Medical History" />
+         </columns>
+      </TableView>
+<!--      <items>-->
+<!--         <FXCollections fx:factory="observableArrayList">-->
+<!--            <String fx:value="Male" />-->
+<!--            <String fx:value="Female" />-->
+<!--            <String fx:value="Other" />-->
+<!--         </FXCollections>-->
+<!--      </items>-->
+<!--      </ComboBox>>-->
+      <TextArea fx:id="historyArea" layoutX="603.0" layoutY="74.0" prefHeight="90.0" prefWidth="361.0" />
+      <TextField fx:id="cmbGender" layoutX="405.0" layoutY="171.0" prefHeight="25.0" prefWidth="141.0" />
+      <Label fx:id="genderLbl" layoutX="331.0" layoutY="171.0" text="Gender">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

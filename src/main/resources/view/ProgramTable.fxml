@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="programPane" prefHeight="340.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mindwave.controller.TherapyProgramTableFormController">
+   <children>
+      <TableView fx:id="tblProgram" layoutX="6.0" layoutY="5.0" onMouseClicked="#tblProgramOnClick" prefHeight="319.0" prefWidth="502.0">
+        <columns>
+          <TableColumn fx:id="clmProgramId" prefWidth="102.0" text="Program ID" />
+          <TableColumn fx:id="clmProgramName" prefWidth="147.0" text="Program Name" />
+            <TableColumn fx:id="clmDuration" prefWidth="132.0" text="Duration" />
+            <TableColumn fx:id="clmFee" prefWidth="120.0" text="Fee" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
